@@ -1,16 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import rpy2.robjects as robjects
 from rpy2.robjects.packages import importr
-
-
-# In[3]:
 
 
 get_ipython().system('git clone https://github.com/guillemr/robust-fpop')
@@ -21,14 +16,6 @@ get_ipython().system('R CMD INSTALL robseg_*.tar.gz')
 robjects.r("install.packages('changepoint', lib = '/usr/local/lib/R/site-library')")
 robseg = importr('robseg')
 robjects.r.source("robust-fpop/Simulation.R");
-
-# global factor_list
-# global metric
-# global lthreshold_list
-# global meta_df
-# global indiv_cps
-# global indiv_durations
-# global processed_configs_count
 
 
 def cpd_aggr(df, factor_list, metric, meta_df, lthreshold_list, indiv_cps, indiv_durations, dest_dir):
