@@ -8,7 +8,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from pyculiarity import detect_ts
 from datetime import datetime
 from breakout import detect_breakout
 
