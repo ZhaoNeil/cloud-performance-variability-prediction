@@ -52,7 +52,7 @@ def cpd_aggr(df, factor_list, metric, meta_df, minsize_list, indiv_cps, indiv_du
 
     for min_size, grp in indiv_cps.groupby("min_size"):
         
-        grp.to_csv("%s/indiv-%.2f" % (dest_dir, int(min_size)), index=False)
+        grp.to_csv("%s/indiv-%.2f" % (dest_dir, int(float(min_size))), index=False)
 
         aggr_df = pd.DataFrame()
         for hw, subgrp in grp.groupby("hw_type"):
@@ -71,7 +71,7 @@ def cpd_aggr(df, factor_list, metric, meta_df, minsize_list, indiv_cps, indiv_du
             t_count["hw_type"] = hw
             aggr_df = pd.concat([aggr_df, t_count])
 
-        aggr_df.to_csv("%s/aggr-%.2f" % (dest_dir, int(min_size)))
+        aggr_df.to_csv("%s/aggr-%.2f" % (dest_dir, int(float(min_size))))
 
 
 # In[5]:
