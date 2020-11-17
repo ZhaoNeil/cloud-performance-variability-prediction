@@ -70,7 +70,7 @@ def cpd_indiv(hw_type, df, min_size, factor_list, metric, indiv_cps, indiv_durat
 
         vals = list(grp[metric].values)
         timestmaps = grp.timestamp.values
-        changepoint = detect_breakout(vals, min_size=2, method='multi', beta=0.001, degree=1)
+        changepoint = detect_breakout(vals, min_size=min_size, method='multi', beta=0.001, degree=1)
         cp_index = [0]+changepoint+[len(vals)]
         mean_vals = []
         for i in range(len(cp_index)-1):
