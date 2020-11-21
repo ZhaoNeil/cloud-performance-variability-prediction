@@ -73,11 +73,12 @@ def cpd_indiv(hw_type, df, min_size, factor_list, metric, indiv_cps, indiv_durat
         changepoint = detect_breakout(vals, min_size=min_size, method='multi', beta=0.001, degree=1)
         cp_index = [0]+changepoint+[len(vals)]
         mean_vals = []
+        percent_change = []
         for i in range(len(cp_index)-1):
             mean_vals.append(np.mean(vals[cp_index[i]:cp_index[i+1]]))
         for i in range(len(changepoint)):
-            percent_change = (mean_vals[i+1]-mean_vals[i])/mean_vals[i] * 100.0
-            indiv_cps.loc[len(indiv_cps)] = [hw_type, "%.2f" % min_size] + [str(x) for x in list(idx)] + [timestmaps[changepoint[i]], percent_change] 
+            percent_change.append((mean_vals[i+1]-mean_vals[i])/mean_vals[i])
+            indiv_cps.loc[len(indiv_cps)] = [hw_type, "%.2f" % min_size] + [str(x) for x in list(idx)] + [timestmaps[changepoint[i]], percent_change[i]] 
 
 
         timestmaps_min = timestmaps.min()
