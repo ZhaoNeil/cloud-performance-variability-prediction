@@ -8,6 +8,7 @@ Authors:
 * Alexandru Uta(a.uta@liacs.leidenuniv.nl)
 
 ==========================================
+
 **CPD_collection** and **CPD_counts** are for the changepoint detection (robseg) on [CCGrid20 paper's dataset](https://zenodo.org/record/3686952/#.X2u5yy8RrVU) and analysis methods refer to [this paper](https://arxiv.org/abs/2003.04824). Analysis code refers to [this repository](https://gitlab.flux.utah.edu/emulab/cloudlab-ccgrid20).
 
 **BD_collection** and **BD_counts** are for the changepoint detection (Breakout Detection)  on [CCGrid20 paper's dataset](https://zenodo.org/record/3686952/#.X2u5yy8RrVU).
@@ -21,4 +22,5 @@ Authors:
 **prediction_CP** predicts timestamp of changepoint.
 
 ==========================================
+
 With comments and questions related to this repository, please contact: Yuxuan Zhao (y.zhao.2@umail.leidenuniv.nl)
