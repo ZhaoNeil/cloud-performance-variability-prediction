@@ -16,10 +16,6 @@ from breakout import detect_breakout
 
 
 def cpd_aggr(df, factor_list, metric, meta_df, minsize_list, indiv_cps, indiv_durations, dest_dir):
-    """ 
-    Run cpd_indiv() a bunch of times and aggregate/save results; repeat for different CPD thresholds.
-    This function will be reused for memory and disk CPD. 
-    """
     global processed_configs_count
     global total_measurements 
     processed_configs_count = 0
