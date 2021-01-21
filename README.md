@@ -2,10 +2,10 @@
 This repository contains analysis code for paper 'Cloud Performance Variability Prediction', submitted for [4th Workshop on Hot Topics in Cloud Computing Performance](https://hotcloudperf.spec.org). 
 
 Authors:
-*Yuxuan Zhao(y.zhao.2@umail.leidenuniv.nl)
-*Dmitry Duplyakin(dmdu@cs.utah.edu)
-*Robert Ricci(ricci@cs.utah.edu)
-*Alexandru Uta(a.uta@liacs.leidenuniv.nl)
+* Yuxuan Zhao(y.zhao.2@umail.leidenuniv.nl)
+* Dmitry Duplyakin(dmdu@cs.utah.edu)
+* Robert Ricci(ricci@cs.utah.edu)
+* Alexandru Uta(a.uta@liacs.leidenuniv.nl)
 
 **CPD_collection** and **CPD_counts** are for the changepoint detection (robseg) on [CCGrid20 paper's dataset](https://zenodo.org/record/3686952/#.X2u5yy8RrVU) and analysis methods refer to [this paper](https://arxiv.org/abs/2003.04824). Analysis code refers to [this repository](https://gitlab.flux.utah.edu/emulab/cloudlab-ccgrid20).
 
