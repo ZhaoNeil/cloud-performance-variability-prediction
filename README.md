@@ -1,5 +1,5 @@
 # cloud-performance-variability-prediction
-This repository contains analysis code for paper 'Cloud Performance Variability Prediction', submitted for [4th Workshop on Hot Topics in Cloud Computing Performance](https://hotcloudperf.spec.org). 
+This repository contains analysis code for paper [Cloud Performance Variability Prediction](https://alexandru-uta.github.io/pubs/hotcloudperf21-perfvar.pdf), submitted for [4th Workshop on Hot Topics in Cloud Computing Performance](https://hotcloudperf.spec.org). 
 
 Authors:
 * Yuxuan Zhao(y.zhao.2@umail.leidenuniv.nl)
